@@ -1,0 +1,660 @@
+.portada{
+    overflow-x: hidden;
+   width: 100vw;
+   height: 94vh;
+   padding: 0 5vw;
+    display: flex;
+    vertical-align: middle;
+}
+
+.portada .txt {
+    margin: 1vw;
+}
+
+.txt {
+    padding: 80px 0;
+    width: 100%;
+    height: 60%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portada #name {
+    font-size:calc(65px + 1.5vw);
+    font-family: 'Manrope','Segoe UI','Anthon',Tahoma, Verdana, sans-serif;
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 0px;
+    line-height:calc(65px + 1.5vw);
+    user-select: none;
+}
+
+.portada #name::before{
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--gray);
+    font-size: 2.2vw;
+    font-weight: 1;
+    position: absolute;
+    left: -20px;
+    top:30px;
+}
+
+.portada #name::after{
+    content: '<h1/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--gray);
+    font-size: 2.2vw;
+    font-weight: 1;
+}
+
+.txt::before {
+    content: '<body>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--gray);
+    font-size: 2vw;
+    font-weight: 1;
+    position: absolute;
+    left: -6vw;
+    top:0;
+}
+
+.portada #name::after{
+    content: '<h1/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--gray);
+    font-size: 2.2vw;
+    font-weight: 1;
+}
+
+.portada #name .blast{
+    display: inline-block;
+    margin: 0;
+    /* line-height:0.01px;    */
+    cursor:default;
+    text-align: center;
+    font-weight: 600;
+}
+
+.portada #name .blast:hover {
+    color: var(--resaltador);
+    cursor:default;
+}
+
+.portada #name .animated{
+    animation-duration:1s;
+    animation-fill-mode:both;
+}
+
+.portada #name .rubberBand{
+    animation-name:rubberBand;
+}
+
+
+.portada .txt .profesion{
+    font-size:calc(14px + 1.5vw);
+    position: relative;
+    color: var(--light-gray);
+    letter-spacing: .45vw;
+}
+
+.portada .txt .profesion::before{
+    content: '<p>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--gray);
+    font-size: 2.2vw;
+    font-weight: 1;
+    position: absolute;
+    left: -15px;
+    top: -4vw; 
+}
+.portada .txt .profesion::after{
+    content: '<p/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--gray);
+    font-size: 2.2vw;
+    font-weight: 1;
+    position: absolute;
+    left: -15px;
+    bottom: -4vw; 
+}
+
+.portada .txt #text-typing{
+    font-size: calc(14px + 1.5vw);
+    letter-spacing: 5px;
+    display: inline-block;
+    position: relative;
+    margin:  5vw 0;
+    color: var(--light-gray);
+}
+
+.portada .txt #text-typing::before{
+    content: '<script>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--gray);
+    font-size: 2.2vw;
+    font-weight: 1;
+    position: absolute;
+    left: -15px;
+    top: -4vw;
+}
+
+.portada .txt #text-typing::after{
+    content: '<script/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: var(--gray);
+    font-size: 2.2vw;
+    font-weight: 1;
+    position: absolute;
+    left: -15px;
+    bottom: -4vw; 
+}
+
+.portada .txt #text-typing .typing{
+    color: var(--resaltador);
+}
+
+.Typewriter{
+    display: inline-block;
+}
+
+.Typewriter .Typewriter__wrapper {
+    letter-spacing: 5px;
+}
+
+.portada .animation{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+    width: 50%;
+    height: 60%;
+    margin: 15px 0;
+    z-index:-1;
+}
+
+.portada .animation .container-paralax{
+    /* content: ''; */
+    position: relative;
+    padding: 80px 0;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    /* background-color: var(--resaltador); */
+    /* border-radius: 1%; */
+}
+
+
+.container-paralax img{
+    position: absolute;
+    object-fit: cover;
+    left: -20vw;
+    top:-5px;
+    width: 70vw;
+}
+
+.container-paralax #capa1{
+    clip-path: circle(38.0% at 50% 50%);
+    animation: stars 140s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+.container-paralax #capa2{
+    clip-path: circle(38.0% at 50% 50%);
+    animation: moon 180s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+.container-paralax #capa51{
+    clip-path: circle(38.0% at 50% 50%);
+    animation: tree .8s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}    
+
+.container-paralax #capa6{
+    /* clip-path: circle(38.0% at 50% 50%); */
+    animation: bush 5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+.container-paralax #capa5{
+    /* clip-path: circle(38.0% at 50% 50%); */
+    animation: bush2 8s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+.container-paralax #capa3{
+    /* clip-path: circle(38.0% at 50% 50%); */
+    animation: fool 20s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+.container-paralax #capa9 {
+    transform: translateY(-9%);
+    animation: fool2 20s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px){
+    .portada {
+        width: 100vw;
+        height: 95vh;
+        padding: 0 100px;
+        display: flex;
+    }
+    
+    .portada .txt { 
+        margin: 15px 0;
+    }
+    
+    .txt {
+        display: block;
+        padding: 80px 0;
+        width: 50%;
+        height: 60%;
+        margin: 0;
+        position: relative;
+    }
+    
+    .txt::before {
+        content: '<body>';
+        font-family: 'La Belle Aurore', cursive;
+        color: var(--gray);
+        font-size: 20px;
+        font-weight: 1;
+        position: absolute;
+        left: -65px;
+        top:0;
+    }
+    
+    .portada #name {
+        font-size: calc(90px + 1.5vw);
+        font-family: 'Manrope','Segoe UI','Anthon',Tahoma, Verdana, sans-serif;
+        transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        margin: 0px;
+        line-height:calc(90px + 1.5vw);
+        user-select: none;
+    }
+    
+    .portada #name::before{
+        content: '<h1>';
+        font-family: 'La Belle Aurore', cursive;
+        color: var(--gray);
+        font-size: 20px;
+        font-weight: 1;
+        position: absolute;
+        left: -20px;
+        top:30px;
+    }
+    
+    .portada #name::after{
+        content: '<h1/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: var(--gray);
+        font-size: 20px;
+        font-weight: 1;
+    }
+    
+    .portada #name .blast{
+        display: inline-block;
+        margin: 0;
+        /* line-height:0.01px;    */
+        cursor:default;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .portada #name .blast:hover {
+        color: var(--resaltador);
+        cursor:default;
+    }
+    
+    .portada #name .animated{
+        animation-duration:1s;
+        animation-fill-mode:both;
+    }
+    
+    .portada #name .rubberBand{
+        animation-name:rubberBand;
+    }
+    
+    
+    .portada .txt .profesion{
+        font-size: calc(5px + 1.5vw);
+        position: relative;
+        color: var(--light-gray);
+        letter-spacing: .45vw;
+    }
+    
+    .portada .txt .profesion::before{
+        content: '<p>';
+        font-family: 'La Belle Aurore', cursive;
+        color: var(--gray);
+        font-size: 20px;
+        font-weight: 1;
+        position: absolute;
+        left: -15px;
+        top: -30px; 
+    }
+    .portada .txt .profesion::after{
+        content: '<p/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: var(--gray);
+        font-size: 20px;
+        font-weight: 1;
+        position: absolute;
+        left: -15px;
+        bottom: -30px; 
+    }
+    
+    .portada .txt #text-typing{
+        font-size: calc(5px + 1.5vw);
+        letter-spacing: 5px;
+        display: inline-block;
+        position: relative;
+        margin: 50px 0;
+        color: var(--light-gray);
+    }
+
+    .portada .txt #text-typing::before{
+        font-size: 20px;
+        top: -30px; 
+    }
+    
+    .portada .txt #text-typing::after{
+        content: '<script/>';
+        font-family: 'La Belle Aurore', cursive;
+        color: var(--gray);
+        font-size: 20px;
+        font-weight: 1;
+        position: absolute;
+        bottom: -30px; 
+    }
+
+    
+    .portada .txt #text-typing .typing{
+        color: var(--resaltador);
+    }
+    
+    .Typewriter{
+        display: inline-block;
+    }
+    
+    .Typewriter .Typewriter__wrapper {
+        letter-spacing: 5px;
+    }
+    
+    @keyframes rubberBand{
+        0%{
+            transform:scale3d(1,1,1);
+        }
+        30%{
+            transform:scale3d(1.25,.75,1);
+        }
+    
+        40%{
+            transform:scale3d(.75,1.25,1);
+        }
+    
+        50%{
+            transform:scale3d(1.15,.85,1);
+        }
+    
+        65%{
+            transform:scale3d(.95,1.05,1);
+        }
+    
+        75%{
+            transform:scale3d(1.05,.95,1);
+        }
+    
+        100%{
+            transform:scale3d(1,1,1);
+        }
+    }
+    
+    .portada .animation{
+        display: block;
+        padding: 10px 0;
+        width: 50%;
+        height: 60%;
+        margin: 15px 0;
+
+    }
+    
+    .portada .animation .container-paralax{
+        /* content: ''; */
+        position: relative;
+        padding: 80px 0;
+        width: 100%;
+        height: 80%;
+        margin: 0;
+        z-index: -15;
+        /* background-color: var(--resaltador); */
+        /* border-radius: 1%; */
+    }
+    
+    
+    .container-paralax img{
+        position: absolute;
+        object-fit: cover;
+        left: -150px;
+        top:-5px;
+        width: 60vw;
+
+    }
+
+    .container-paralax #capa1{
+        clip-path: circle(38.0% at 50% 50%);
+        animation: stars 140s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+    }
+
+    .container-paralax #capa2{
+        clip-path: circle(38.0% at 50% 50%);
+        animation: moon 180s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+    }
+
+    .container-paralax #capa51{
+        clip-path: circle(38.0% at 50% 50%);
+        animation: tree .8s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+    }    
+    
+    .container-paralax #capa6{
+        /* clip-path: circle(38.0% at 50% 50%); */
+        animation: bush 5s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+    }
+
+    .container-paralax #capa5{
+        /* clip-path: circle(38.0% at 50% 50%); */
+        animation: bush2 8s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+    }
+
+    .container-paralax #capa3{
+        /* clip-path: circle(38.0% at 50% 50%); */
+        animation: fool 20s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+    }
+
+    .container-paralax #capa9 {
+        transform: translateY(-9%);
+        animation: fool2 20s ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+    }
+
+}
+
+@keyframes rubberBand{
+    0%{
+        transform:scale3d(1,1,1);
+    }
+    30%{
+        transform:scale3d(1.25,.75,1);
+    }
+
+    40%{
+        transform:scale3d(.75,1.25,1);
+    }
+
+    50%{
+        transform:scale3d(1.15,.85,1);
+    }
+
+    65%{
+        transform:scale3d(.95,1.05,1);
+    }
+
+    75%{
+        transform:scale3d(1.05,.95,1);
+    }
+
+    100%{
+        transform:scale3d(1,1,1);
+    }
+}
+
+@keyframes stars {
+    0%{
+        transform:translateY(-28%) translate(-6%) rotate(20deg)  scale(110%);
+    }
+    50%{
+        transform:translateY(-28%) translate(-6%) rotate(160deg) scale(110%)
+    }
+    100%{
+        transform:translateY(-28%) translate(-6%) rotate(360deg) scale(110%);
+    }
+}
+
+@keyframes moon {
+    0%{
+        transform: translateY(5%);
+    }
+    100%{
+        transform: translateY(-2%);
+
+    }
+}
+@keyframes tree {
+    0%{
+        transform: skew(.8deg);
+    }
+    100%{
+        transform: skew(-0.8deg);
+
+    }
+}
+@keyframes bush {
+    /* from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.005);
+
+    } */
+    from{
+        transform: rotate(1.3deg);
+    }
+    to{
+        transform: rotate(-1.3deg);
+    }
+
+}
+@keyframes bush2 {
+    from{
+        transform: rotate(-1deg);
+    }
+    to{
+        transform: rotate(1deg);
+    }
+}
+@keyframes fool {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(4%);
+
+    }
+}
+@keyframes fool2 {
+    0%{
+        transform: translateY(22%);
+    }
+    100%{
+        transform: translateY(18%);
+
+    }
+}

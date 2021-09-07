@@ -1,0 +1,47 @@
+
+body{
+    box-sizing: border-box;
+    background: var(--background-color);
+    color: var(--light-color);
+    font-family:'Ubuntu', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6vw;
+}
+
+*::selection{
+    background: var(--selecion);
+    color: var(--background-color);
+}
+
+a {
+    text-decoration: none;    
+}
+
+
+:root {
+    --background-color:#121212;
+    --light-color: #eef;
+    --gradient-martini:  linear-gradient(to right, #fdfc47, #24fe41);
+    --dribbble: #ea4c89;
+    --instagram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    --github:#88f;
+    --linkedin: #1397d5;
+    --gray: #555;
+    --light-gray: #777;
+    --resaltador: #98ff5c;
+    --resaltadors: #98ff5c29;
+    --selecion: #ccc9;
+}
+
+.contrast {
+    --light-color: #121212;
+    --background-color:#eef;
+    --dribbble: #eef;
+    --instagram: #121212;
+    --github:#eef;
+    --linkedin: #eef;
+    --resaltador: #121212;
+    --resaltadors: #12121200;
+}
