@@ -6,7 +6,7 @@
     height:5vh; 
     padding: 4vh 0;
     z-index: 1000;
-    position: relative;
+    position: sticky;
 }
 
 .navigation{

@@ -469,7 +469,7 @@
     }
     
     .portada .animation{
-        display: block;
+        display: none;
         padding: 10px 0;
         width: 50%;
         height: 60%;
