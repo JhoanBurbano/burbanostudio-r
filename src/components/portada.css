@@ -304,7 +304,7 @@
     
     .txt {
         display: block;
-        padding: 80px 0;
+        padding: calc(40px + 2vh) 0;
         width: 50%;
         height: 60%;
         margin: 0;
@@ -339,7 +339,7 @@
         font-weight: 1;
         position: absolute;
         left: -20px;
-        top:30px;
+        top:calc(30px - 4vh);
     }
     
     .portada #name::after{
