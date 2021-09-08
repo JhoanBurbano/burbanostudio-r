@@ -312,7 +312,7 @@
     }
     
     .txt::before {
-        content: '<bodyvfrvfvfrv>';
+        content: '<body>';
         font-family: 'La Belle Aurore', cursive;
         color: var(--gray);
         font-size: 20px;
