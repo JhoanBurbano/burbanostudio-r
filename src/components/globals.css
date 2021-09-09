@@ -4,11 +4,28 @@ body{
     background: var(--background-color);
     color: var(--light-color);
     font-family:'Ubuntu', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     font-size: 1.6vw;
 }
+
+*::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+    }
+*::-webkit-scrollbar-thumb{
+    background: var(--resaltador);
+    border-radius: 100px;
+    border: 1.5px solid #0000;
+    }
+*::-webkit-scrollbar-thumb:hover{
+    background: var(--resaltador);
+    }
+*::-webkit-scrollbar-track{
+    background:#0000;
+    border-radius: 0px;
+    }
 
 *::selection{
     background: var(--selecion);
@@ -33,6 +50,7 @@ a {
     --resaltador: #98ff5c;
     --resaltadors: #98ff5c29;
     --selecion: #ccc9;
+    --transparent: var(--background-color);
 }
 
 .contrast {
@@ -44,4 +62,5 @@ a {
     --linkedin: #eef;
     --resaltador: #121212;
     --resaltadors: #12121200;
+    --transparent:#0000;
 }

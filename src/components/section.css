@@ -1,0 +1,55 @@
+.container{
+    /* width:80vw; */
+    height: calc(-20px + 90vh);
+    position: relative;
+    display: flex;
+
+}
+
+
+.article {
+    display: flex;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.article .texto{
+    display: flex;
+    width: 50%;
+}
+
+.article .texto .title {
+    /* writing-mode:vertical-rl;
+    letter-spacing: 20px; */
+    width:calc(5%);
+    line-height: calc(10px + 8vh);
+    word-wrap: break-word;
+    text-align:center;
+    vertical-align: middle;
+    margin: auto;
+
+}
+
+.article .texto .describe {
+    margin: auto;
+    padding: calc(10px + 1vw);
+    line-height: calc(10px + 4vh);
+    letter-spacing: calc(1px + 0.2vw);
+    text-align: justify;
+    width: 90%;
+}
+
+.article .img {
+    width: 50%;
+    overflow: hidden;
+    height: 20%;;
+    padding: 10px;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.article .img img {
+    object-fit: cover;
+    object-position: center;
+}
