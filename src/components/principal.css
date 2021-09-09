@@ -6,7 +6,7 @@
     text-align: center;
     letter-spacing: 2.5vw;
     margin: 0;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
 .main {
