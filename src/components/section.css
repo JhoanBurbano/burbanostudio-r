@@ -30,6 +30,8 @@
 }
 
 .article .texto .describe {
+    font-size: calc(5px + 1.5vw);
+    color: var(--light-gray);
     margin: auto;
     padding: calc(10px + 1vw);
     line-height: calc(10px + 4vh);
@@ -46,9 +48,26 @@
     position: relative;
     display: block;
     text-align: center;
+    transition: 4s cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 
-.article .img img {
+.article .img img:nth-child(1),.article .img img:nth-child(2) {
     object-fit: cover;
     object-position: center;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+/* .article .img img::after{
+    content:"";
+    background-color: red;
+    width: 100%;
+    position: absolute;
+    height: 100%
+} */
+
+.article .img::nth-child(3):hover{
+    filter:invert(2);
+    transform: scale(1.01)
 }
