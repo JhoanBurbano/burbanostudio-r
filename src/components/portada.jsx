@@ -19,13 +19,11 @@ function Portada() {
     function handleMouseEnter(e) {
         if (e.target.classList.contains('rubberBand', 'animated') === false) {
             e.target.classList.add("animated", "rubberBand");
-            console.log(e.target.classList)
         }
     }
 
     function handleMouseLeave(e) {
         e.target.classList.remove("animated", "rubberBand")
-        console.log(e.target.classList)
 
     }
 

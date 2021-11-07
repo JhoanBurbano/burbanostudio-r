@@ -1,7 +1,7 @@
 import React from 'react';
-import './section.css';
+import './projects.css';
 
-function Section(){
+function Projects(){
 
 
 
@@ -27,4 +27,4 @@ function Section(){
 
 
 
-export default Section
+export default Projects

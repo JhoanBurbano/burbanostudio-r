@@ -1,6 +1,5 @@
 import React, {  } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { } from '@fortawesome/free-solid-svg-icons';
 import { faDribbble, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './navbar.css'
 
@@ -57,7 +56,7 @@ function Navbar() {
                         <a href="#">skills</a>
                     </li>
                     <li>
-                        <a href="#">contact</a>
+                        <a href="#bio">contact</a>
                     </li>
                 </ul>
             </nav>

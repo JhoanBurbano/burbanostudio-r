@@ -139,7 +139,7 @@
     letter-spacing: 3px;
     font-weight:100;
     border: 1px solid var(--light-color);
-    padding: 5px;
+ padding: 5px;
     border-radius: 3px;
     margin: 0;
     transition:  1s cubic-bezier(0.97, 2.39, 0.83, 0.13); ;
@@ -160,7 +160,8 @@
     background-color: var(--light-color);
     border-radius: .188vw;
     color:var(--background-color);
-    padding: .125   px;
+    padding: 0 .125vw 0 .25vw;
+    text-align: center;
 }
 
 .logo .text-base.dark b {

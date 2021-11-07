@@ -5,6 +5,7 @@
    padding: 0 5vw;
     display: flex;
     vertical-align: middle;
+    /* cursor: none; */
 }
 
 .portada .txt {
@@ -30,6 +31,7 @@
     line-height:calc(65px + 1.5vw);
     user-select: none;
 }
+
 
 .portada #name::before{
     content: '<h1>';
@@ -165,7 +167,7 @@
 }
 
 .portada .animation{
-    display: none;
+    /* display: block; */
     flex-direction: column;
     justify-content: center;
     padding: 10px 0;
@@ -371,6 +373,7 @@
     
     .portada #name .rubberBand{
         animation-name:rubberBand;
+
     }
     
     

@@ -17,13 +17,13 @@ body{
 *::-webkit-scrollbar-thumb{
     background: var(--resaltador);
     border-radius: 100px;
-    border: 1.5px solid #0000;
+    border: 1.5px solid transparent;
     }
 *::-webkit-scrollbar-thumb:hover{
     background: var(--resaltador);
     }
 *::-webkit-scrollbar-track{
-    background:#0000;
+    background:transparent;
     border-radius: 0px;
     }
 
